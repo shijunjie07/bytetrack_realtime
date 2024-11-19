@@ -12,7 +12,7 @@ class STrack(BaseTrack):
     def __init__(self, ltwh, score, det_class):
 
         # wait activate
-        self._ltwh = np.asarray(ltwh, dtype=np.float)
+        self._ltwh = np.asarray(ltwh, dtype=float)
         self.kalman_filter = None
         self.mean, self.covariance = None, None
         self.is_activated = False
